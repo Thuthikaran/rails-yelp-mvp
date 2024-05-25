@@ -4,3 +4,4 @@ class Restaurant < ApplicationRecord
   validates :category, inclusion: { in: CATEGORIES }
   has_many :reviews, dependent: :destroy
 end
+
